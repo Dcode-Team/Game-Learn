@@ -1,0 +1,122 @@
+*{
+ --main-color:#F05A21;
+ --color2:#80C644;
+ --color3:#FFD823;
+ --background:#FBF0C9;
+ box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+/* navbar */
+.navbar{
+    background-color: var(--background);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 15px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    
+}
+.navbar img{
+    width: 70px;
+    display: inline;
+}
+.navbar ul{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 70px;
+}
+.navbar ul li a{
+    padding: 8px 16px;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.navbar ul li:nth-child(odd) a{
+    color:var(--color3);
+    background-color: var(--main-color);
+}
+.navbar ul li:nth-child(even) a{
+    color: var(--main-color);
+    background-color: var(--color3);
+}
+.navbar ul li a:hover{
+    background-color: var(--color2);
+    color: #fff;
+    
+}
+.navbar ul li{
+    height: 70px;
+    align-items: center;
+   
+}
+.navbar ul li i{
+    font-size: 20px;
+}
+
+/* end navbar */
+/* start slider */
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    height: 100vh;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  .mySlides img{
+      height: 90vh;
+  }
+/* end slider */

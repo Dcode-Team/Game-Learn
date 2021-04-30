@@ -40,4 +40,101 @@ our web page will be consist from 4 seperated pages and we will explain them bel
 ## 4. quiz game page 
 ![quiz](wirefram-images/wirefram-quize.png)
 
+* ** 
+
+# User Stories:
+
+## inroduction page
+
+ * As a user I want the kids using this web site to learn  english in a fun and engaging style. Like a game. 
+
+**Feature Tasks:**
+ * Show a brief introduction of the site and a welcoming message
+* Show the options for all the games available.
+A bitily to select the desired game.
+
+**Acceptance Tests:**
+* Ensure the user is moved to the game page when clicking on each option button.  For example: if the the i clicked in the animals game option I will be taken       to the animals game page    
+
+**Estimate your User Stories:**
+* Estimated anticipation is “extra small” for this page. It will take less than 2 minutes to scan the components of the page and choose the desired game. 
+
+
+## Numbers and letters game
+
+* As a kid I want to learn the sounds of English letters and numbers.
+
+**Feature Tasks:**
+* Displays a number of images of random letters and numbers.
+
+**Acceptance Tests:**
+* Ensure a sound of the letter or number pops up each time the kid clicks on a button
+
+
+**Estimate your User Stories:**
+
+* Estimated anticipation for this page is “extra large”. The kid can have as time  as he/she wishes clicking on and listening to sounds of numbers and letters. 
+
+ ## Animales’ game
+
+
+* As a kid I want to learn about different animal sounds  and names in English. 
+
+**Feature Tasks:**
+
+* Display a number of images for animals.
+
+* Show a multiple of choices for animal’s names underneath each image. 
+
+**Acceptance Tests:**
+
+* Ensure a sound the animal pops out for the kid each time he/ehe clicks on the image.
+
+* The ability to select a name from the multiple choices displayed under each image.
+
+* Alert the user of the correct answer if he/she chooses the correct answer.
+
+* Flickering the screen in case the kid chooses the wrong answer.
+
  
+
+**Estimate your User Stories:**
+
+* Estimated anticipation for this page is “extra large”.  The kid is able to style on this page playing clicking and choosing for as long as he/she desires.
+
+
+## quiz page
+
+* As a user, i want to tast my information of what I learned in the previous two pages
+
+**Feature Tasks:**
+
+* Display a couple of questions about the numbers, letters, animales.
+
+* Display the score for the user after the quiz game is finished.
+
+**Acceptance Tests:** 
+
+* Calculate the score for the user and display it at the bottom of the page.
+* Save every previous score the kid had scored by using Local Storage for the purposes of measuring the kid’s improvement.
+
+**Estimate your User Stories:**
+
+* Estimated anticipation for this page is “extra large”. The kid is able on this page as long as he/she desired to finish the quiz game.  
+
+## Creator’s page 
+
+* As a user I want to know more about the crestores of the educational website. 
+
+**Feature Tasks:**
+
+* Show a brief description of the creators of this website and their pictures.
+
+
+**Estimate your User Stories:**
+
+* Estimated anticipation for this page is “extra small”. It only takes 5 minute to scan the pictures of the creators and their two lines description of themselves. 
+
+
+
+

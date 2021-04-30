@@ -16,12 +16,15 @@
     5. The Game-learn website will provide a short quiz for kids to test what they learned.
     
     6- The kids will have a final mark for the last three attemps.
+
+
      
 **Out:** 
      
      1. Our website will never turn into an IOS or Android app its just a website for learning.
      
      2. Our website will never have videos for learning just images and sounds.
+
 
 
 

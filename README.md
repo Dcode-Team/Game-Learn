@@ -21,4 +21,23 @@ Our project is a learning web site that is directed to kids between the age of 4
 The last page will be a creator's page, where there is a previous description and pictures of the creators of this learning and playing game. 
 
 * ** 
+
+# Wirefram
+our web page will be consist from 4 seperated pages and we will explain them below :
+
+## 1. Home page 
+
+![HOME](wirefram-images/wirefram-home.png)
+
+
+## 2. Numbers and Letters page
+
+![n&l](wirefram-images/wireframe-numbers.png)
+
+## 3. Animals game page
+![animal](wirefram-images/wirefram-animal.png)
+
+## 4. quiz game page 
+![quiz](wirefram-images/wirefram-quize.png)
+
  

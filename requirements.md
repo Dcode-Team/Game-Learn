@@ -2,28 +2,27 @@
 
 **Scope(In/Out):**
 
-**In:** 
+In:
+1. The Game-learn website will provide home page display all the features of our project and a short description of   our website.
+    
+ 2. The Game-learn website will provide page for game number one to learn the kids the letters and numbers the page will contain an images.   
 
-    1. The Game-learn website will provide home page display all the features of our project and a short description of   our website.
+ 3. Kids will have a sound to teach them how to say the numbers and letters.
     
-    2. The Game-learn website will provide page for game number one to learn the kids the letters and numbers the page will contain an images.
+ 4. The Game-learn website will provide page for game two to teach the kids the animals and thier sounds it will contain a sound for animal 
+ and option for choose what is the sound for.
     
-    3. Kids will have a sound to teach them how to say the numbers and letters.
+  5. The Game-learn website will provide a short quiz for kids to test what they learned.
     
-    4- The Game-learn website will provide page for game two to teach the kids the animals and thier sounds it will contain a sound for animal 
-       and option for choose what is the sound for.
-    
-    5. The Game-learn website will provide a short quiz for kids to test what they learned.
-    
-    6- The kids will have a final mark for the last three attemps.
+  6. The kids will have a final mark for the last three attemps.
 
 
      
 **Out:** 
      
-     1. Our website will never turn into an IOS or Android app its just a website for learning.
+  1. Our website will never turn into an IOS or Android app its just a website for learning.
      
-     2. Our website will never have videos for learning just images and sounds.
+  2. Our website will never have videos for learning just images and sounds.
 
 
 

@@ -15,16 +15,31 @@
 .row{
     width: 100%;
     display: flex;
+    justify-content: center;
+
     
 }
 .row div{
     padding: 20px;
     background-color: var(--color3);
+    border:1px solid var(--main-color);
+    border-radius: 2rem;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.row div button{
+    background-color: var(--color2);
+    padding: 8px 16px;
+    color: var(--main-color);
+    margin: 0 15px;
+    border-radius: 1rem;
+    border:1px solid var(--main-color);
 }
 .row div h4{
     text-align: center;
     font-weight: bolder;
-    color: var(--color1);
+    color: var(--main-color);
     padding: 10px 0;
     text-transform: uppercase;
 }

@@ -14,7 +14,7 @@ function Question ( questions,answer1, answer2){
   this.questions= questions;
   this.answer1=answer1;
   this.answer2=answer2;
-  this.correctAnswer=[4,7,10];
+  // this.correctAnswer=[4,7,10];
   
 
   Question.quiz.push(this);
@@ -48,7 +48,7 @@ function dispalyQ ()
 function showResults (e) {
   if (e.target.id === 'answer1'){
     score++;
-
+    dispalyQ();
   }else{
     score--;
 

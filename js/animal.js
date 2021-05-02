@@ -3,12 +3,18 @@ let row2=document.getElementById('row2');
 let row3=document.getElementById('row3');
 let row4=document.getElementById('row4');
 let row5=document.getElementById('row5');
+let row21=document.getElementById('row21');
+let row22=document.getElementById('row22');
+let row23=document.getElementById('row23');
 
 let animals=['bear.png','cat.png','cow.png','dog.png','elephant.png','fox.png','frog.png','giraffe.png','lion.png','monkey.png','panda.jpg','polar-bear.png','tiger.png'];
 let nameSound=['bear.mp3','cat.mp3','cow.mp3','dog.mp3','elephant.mp3','fox.mp3','frog.mp3','giraffe.mp3','lion.mp3','monkey.mp3','panda.mp3','polar-bear.mp3','tiger.mp3'];
+let fruits=['apple.png','banana.png','blueberry.png','figs.png','grape.png','kiwi.png','orange.png','peach.png','pineapple.png','strowberry.png'];
+let fruitsSound=['apple.mp3','banana.mp3','blueberry.mp3','fig.mp3','grape.mp3','kiwi.mp3','orange.mp3','peach.mp3','pineapple.mp3','strawberry.mp3'];
+
 
 let d=[0,1,2,3,4,5,6,7,8,9,11,12];
-
+let f=[0,1,2,3,4,5,6,7,8,9];
 
 function Animals(name,sound){
   this.name=name.split('.')[0];
@@ -87,11 +93,77 @@ Animals.prototype.rendur1 = function(index){
 
 
 };
+
+
+function Fruits(name,sound){
+  this.name=name.split('.')[0];
+  this.imageSource='./img/fruits/'+name;
+  this.soundSource='./audios/fruits-sound/'+sound;
+  Fruits.all.push(this);
+}
+Fruits.all=[];
+
+for (let index = 0; index < fruits.length; index++) {
+  new Fruits(fruits[index],fruitsSound[index]);
+
+}
+console.log(Fruits.all);
+Fruits.prototype.rendur1 = function(index){
+  let colElement=document.createElement('div');
+  let picElement=document.createElement('img');
+  let NameH=document.createElement('h4');
+
+  // let btn=document.createElement('button');
+
+  // btn.textContent='Name';
+
+  // colElement.appendChild(btn);
+
+  NameH.textContent=this.name;
+  colElement.appendChild(NameH);
+  if(index < 3){
+    row21.appendChild(colElement);
+    picElement.src=this.imageSource;
+    colElement.appendChild(picElement);
+
+  }else if(index >=3 && index<6){
+    row22.appendChild(colElement);
+    picElement.src=this.imageSource;
+    colElement.appendChild(picElement);
+
+  }else if(index >=6 && index <9){
+    row23.appendChild(colElement);
+    picElement.src=this.imageSource;
+    colElement.appendChild(picElement);
+
+  }
+
+  let aduioSound=document.createElement('audio');
+  colElement.appendChild(aduioSound);
+  aduioSound.src=this.soundSource;
+
+  picElement.addEventListener('click',function(){
+
+    aduioSound.play();
+
+  });
+
+
+};
+shuffle(f);
+for (let i=0;i<Fruits.all.length;i++){
+
+  Fruits.all[f[i]].rendur1(i);
+}
+
 shuffle(d);
 for (let i=0;i<Animals.all.length;i++){
 
   Animals.all[d[i]].rendur1(i);
 }
+
+
+
 
 
 function shuffle(array) {

@@ -10,7 +10,12 @@
     position: relative;
 }
 .card-section{
-    padding: 50px;
+    position: relative;
+   
+}
+.card-section svg{
+    top: 0;
+    width: 100%;
 }
 .row{
     width: 100%;
@@ -22,7 +27,7 @@
 .row div{
     padding: 20px;
     background-color: var(--color3);
-    border:1px solid var(--main-color);
+    border:2px solid var(--main-color);
     border-radius: 2rem;
     margin-bottom: 25px;
     margin-left: 20px;

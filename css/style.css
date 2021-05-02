@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
 *{
  --main-color:#F05A21;
  --color2:#80C644;
@@ -8,6 +9,7 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Original Surfer', cursive;
 }
 .slideUp {
   animation-name: slideUp;
@@ -141,11 +143,23 @@ body{
 /* Slideshow container */
 .slideshow-container {
     position: relative;
-    margin: auto;
-    height: 85vh;
+    height: 89vh;
+    width: 100%;
     background-image: url(./../img/background3.jpg);
-  }
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   -moz-background-size: cover;
+   -webkit-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
   
+
+  }
+ 
+  .mySlides img{
+    height: 84vh;
+    
+}
   .slideshow-container .svg2{
     position: absolute;
     bottom: 0px;
@@ -153,6 +167,7 @@ body{
   /* Hide the images by default */
   .mySlides {
     display: none;
+   
     
   }
   
@@ -184,21 +199,21 @@ body{
     from {opacity: .4}
     to {opacity: 1}
   }
-  .mySlides img{
-      height: 80vh;
-  }
+  
   .slideLeft1{
     -webkit-animation-name: slideleft;
     -webkit-animation-duration: 2.2s;
     animation-name: slideleft;
     animation-duration: 2.2s;
+    
   }
   .slideLeft2{
     -webkit-animation-name: slideleft;
     -webkit-animation-duration: 4s;
     animation-name: slideleft;
     animation-duration: 4s;
-    float: right;
+    /* float: right; */
+   
   }
 /* end slider */
 /* start our services  */
@@ -225,3 +240,25 @@ body{
   background-color: brown;
 }
 /* end our servies */
+/* strat footer  */
+footer{
+  background-color:var(--color3);
+  position: relative;
+  text-align: center;
+  height: 100%;
+  margin: 0;
+  margin-top: 150px;
+  color: #fff;
+  padding-top: 60px;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+ .svg-footer{
+   position: absolute;
+  bottom: 80px;
+  width: 100%;
+  left: 0; 
+  margin: 0;
+
+}
+/* end footer */

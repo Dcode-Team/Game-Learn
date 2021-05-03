@@ -203,7 +203,7 @@ let audio1=document.createElement('audio');
 mainDev.appendChild(audio1);
 audio1.src='./audios/lucky-star-good-job.mp3';
 let imgs = [
-  'apples.png',
+  'apple.png',
   'ball.png',
   'bear.png',
   'bee.png',
@@ -445,7 +445,7 @@ function getData() {
   else {
     let h1Ele = document.createElement('h1');
     divScour.appendChild(h1Ele);
-    h1Ele.textContent='Your previous score '+x;
+    h1Ele.textContent='Your previous score '+x+' out of 12';
   }
 }
 getData();

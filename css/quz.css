@@ -3,35 +3,48 @@ main img{
     width: 200px;
     height: 200px;
     margin:20px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px auto;
 }
 
-.correct{
-    
-    margin:30px auto;
+.card{
+    width: 50%;
+    margin:50px auto;
     border-radius: 4%;
     background-color: #80C644;
     padding: 20px;
-    width: 500px;
-    height: 700px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border:2px solid var(--color3)
 }
+.card h1{
+    font-size: 35px;
+}
+button{
+    background-color: var(--main-color);
+    padding: 8px 20px;
+    color: var(--color2);
+    border-radius: 1rem;
+    border:2px solid var(--color3);
+    font-size: 30px;
+    margin-left: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+  }
+  
 
-.btn{
+/* .btn{
     margin-top: 10px;
     width: 100px;
     height: 60px;
     background-color: #FFD823;
 }
-p{
-    font-family: 'Original Surfer', cursive;
-    font-weight: 900px;
-    font-size: 20px;
-    margin-bottom: 10px;
-    border: 2px solid black;
-    padding: 20px;
-}
+
 .btn-grid{
     margin-left: 60px;
-}
+} */
 /* .retake-btn{
     visibility: hidden;
 } */

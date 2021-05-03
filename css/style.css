@@ -84,18 +84,23 @@ body{
 /* navbar */
 .navbar{
     background-color: var(--background);
-    width: 100%;
-    display: flex;
-    justify-content: center; 
-    padding: 0 15px;
-    align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    position: sticky;
+    width: 100%; 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    position: fixed;
     text-align: center;
+    z-index: 100;
     
 }
+.navbar .container{
+  width: 70%;
+}
+.nav{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
 .navbar img{
-    width: 80px;
+    width: 140px;
     display: inline;
 }
 .navbar ul{
@@ -106,6 +111,7 @@ body{
     padding: 0;
     margin: 0;
     height: 80px;
+   
 }
 .navbar ul li a{
     padding: 8px 16px;
@@ -116,15 +122,16 @@ body{
     justify-content: center;
     align-items: center;
     height: 100%;
+    color: var(--color2);
 }
-.navbar ul li:nth-child(odd) a{
+.navbar ul li.active a{
     color:var(--color3);
-    background-color: var(--main-color);
+    background-color:var(--color2);
 }
-.navbar ul li:nth-child(even) a{
+/* .navbar ul li:nth-child(even) a{
     color: var(--main-color);
     background-color: var(--color3);
-}
+} */
 .navbar ul li a:hover{
     background-color: var(--color2);
     color: #fff;
@@ -144,7 +151,7 @@ body{
 /* Slideshow container */
 .slideshow-container {
     position: relative;
-    height: 89vh;
+    height: 100vh;
     width: 100%;
     background-image: url(./../img/background3.jpg);
    background-repeat: no-repeat;

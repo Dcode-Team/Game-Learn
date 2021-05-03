@@ -404,11 +404,15 @@ Question.prototype.rendar = function(i){
 
 };
 
+
+
 shuffle(sh);
 let Qcounter=0;
 Question.allQ[sh[Qcounter]].rendar(Qcounter);
 
 let scour=0;
+
+
 
 function finshMsg(){
   let chech=document.createElement('img');

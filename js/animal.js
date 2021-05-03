@@ -1,3 +1,4 @@
+'use-strict';
 let row1=document.getElementById('row1');
 let row2=document.getElementById('row2');
 let row3=document.getElementById('row3');
@@ -13,7 +14,7 @@ let fruits=['apple.png','banana.png','blueberry.png','figs.png','grape.png','kiw
 let fruitsSound=['apple.mp3','banana.mp3','blueberry.mp3','fig.mp3','grape.mp3','kiwi.mp3','orange.mp3','peach.mp3','pineapple.mp3','strawberry.mp3'];
 
 
-let d=[0,1,2,3,4,5,6,7,8,9,11,12];
+let d=[0,1,2,3,4,5,6,7,8,9,10,11,12];
 let f=[0,1,2,3,4,5,6,7,8,9];
 
 function Animals(name,sound){

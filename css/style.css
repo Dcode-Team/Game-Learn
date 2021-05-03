@@ -23,7 +23,7 @@ body{
 @keyframes slideUp {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(70%);
+    -webkit-transform: translateY(10%);
   } 
   100% {
     opacity: 1;
@@ -34,7 +34,7 @@ body{
 @-webkit-keyframes slideUp {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(70%);
+    -webkit-transform: translateY(10%);
   } 
   100% {
     opacity: 1;
@@ -160,14 +160,10 @@ body{
    -webkit-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
-  
+   padding-top: 100px;
 
   }
  
-  .mySlides img{
-    height: 84vh;
-    
-}
   .slideshow-container .svg2{
     position: absolute;
     bottom: 0px;
@@ -175,8 +171,19 @@ body{
   /* Hide the images by default */
   .mySlides {
     display: none;
-   
+    height: 100%;
+    width: 100%;
     
+  }
+  .inner-img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .inner-img img{
+    height: 70%;
   }
   
   /* Caption text */
@@ -192,20 +199,31 @@ body{
   
   /* Fading animation */
   .fade {
+    transition: all .5s ease-in-out;
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
+    -webkit-animation-duration: 3s;
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 3s;
   }
   
   @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+    0% {opacity: 0
+    }
+    
+    50%{
+      opacity: .5;
+    }
+    100% {opacity: 1}
   }
   
   @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+    0% {opacity: 0
+    }
+    
+    50%{
+      opacity: .5;
+    }
+    100% {opacity: 1}
   }
   
   .slideLeft1{
@@ -227,6 +245,8 @@ body{
 /* start our services  */
 .our-services{
   position: relative;
+  height: 100%;
+  width: 100%;
 }
 .svg-services{
   position: relative;

@@ -33,7 +33,21 @@ button{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     
   }
-  
+  .scor-div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 25px;
+      color: #80C644;
+      width: 100%;
+      
+  }
+  .scor-div h1{
+    text-align: center;
+    font-size: 25px;
+    color: #80C644;
+}
 
 /* .btn{
     margin-top: 10px;

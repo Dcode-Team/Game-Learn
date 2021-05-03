@@ -310,7 +310,7 @@ function btn1Handler(){
     scour++;
     Qcounter++;
     // console.log('scour='+scour+'couner='+Qcounter);
-    if(Qcounter<20){
+    if(Qcounter<12){
       // console.log(sh[Qcounter]);
       Question.allQ[sh[Qcounter]].rendar(Qcounter);
     }
@@ -323,7 +323,7 @@ function btn1Handler(){
   else if(btn1.textContent === Question.allQ[sh[Qcounter]].falseAns){
     Qcounter++;
     // console.log('scour='+scour+'couner='+Qcounter);
-    if(Qcounter<20){
+    if(Qcounter<12){
       // console.log(sh[Qcounter]);
       Question.allQ[sh[Qcounter]].rendar(Qcounter);
     }
@@ -339,7 +339,7 @@ function btn2Handler(){
     scour++;
     Qcounter++;
     console.log('scour='+scour+'couner='+Qcounter);
-    if(Qcounter<20){
+    if(Qcounter<12){
       // console.log(sh[Qcounter]);
       Question.allQ[sh[Qcounter]].rendar(Qcounter);
     }
@@ -352,7 +352,7 @@ function btn2Handler(){
   else if(btn2.textContent === Question.allQ[sh[Qcounter]].falseAns){
     Qcounter++;
     // console.log('scour='+scour+'couner='+Qcounter);
-    if(Qcounter<20){
+    if(Qcounter<12){
       // console.log(sh[Qcounter]);
       Question.allQ[sh[Qcounter]].rendar(Qcounter);
     }
@@ -412,7 +412,7 @@ function finshMsg(){
   header.textContent='Well done !';
   let header2=document.createElement('h2');
   mainDev.appendChild(header2);
-  header2.textContent='Your Score is '+scour;
+  header2.textContent='Your Score is '+scour+' out of 12';
   audio1.play();
 }
 function shuffle(array) {

@@ -86,7 +86,7 @@ function dispalyQ() {
     }
     m++;
   }
-  localStorage.setItem("questions", JSON.stringify(Question.quiz));
+  localStorage.setItem("score", JSON.stringify(scour));
 }
 
 function randomQA(min, max) {
@@ -130,23 +130,7 @@ function showResults(e) {
   console.log(score);
 }
 let count = 0;
-function getData() {
-  let x = JSON.parse(localStorage.getItem("questions"));
-  if (x) {
-    for (let i = 0; i < x.length; i++) {
-      new Question(
-        x[i].questions,
-        x[i].name,
-        x[i].img,
-        x[i].answer1,
-        x[i].answer2
-      );
-    }
-  } else {
-    for (let i = 0; i < imgs.length; i++) {
-      new Question(imgs[i]);
-    }
-  }
+
   let scor = JSON.parse(localStorage.getItem("score"));
   let pEle = document.createElement("p");
   pEle.textContent = `Your previous Score is ${scor}`;
@@ -214,6 +198,10 @@ let btn1=document.createElement('button');
 let btn2=document.createElement('button');
 let sh=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19];
 let mainDev=document.getElementById('qusCard');
+let divScour= document.getElementById('scoure');
+let audio1=document.createElement('audio');
+mainDev.appendChild(audio1);
+audio1.src='./audios/lucky-star-good-job.mp3';
 let imgs = [
   'apples.png',
   'ball.png',
@@ -317,6 +305,68 @@ for (let i=0;i<imgs.length;i++){
   new Question(i);
 }
 
+function btn1Handler(){
+  if(btn1.textContent === Question.allQ[sh[Qcounter]].trueAns){
+    scour++;
+    Qcounter++;
+    // console.log('scour='+scour+'couner='+Qcounter);
+    if(Qcounter<20){
+      // console.log(sh[Qcounter]);
+      Question.allQ[sh[Qcounter]].rendar(Qcounter);
+    }
+    else{
+      finshMsg();
+    }
+
+
+  }
+  else if(btn1.textContent === Question.allQ[sh[Qcounter]].falseAns){
+    Qcounter++;
+    // console.log('scour='+scour+'couner='+Qcounter);
+    if(Qcounter<20){
+      // console.log(sh[Qcounter]);
+      Question.allQ[sh[Qcounter]].rendar(Qcounter);
+    }
+    else{
+      finshMsg();
+    }
+  }
+  localStorage.setItem('score', JSON.stringify(scour));
+}
+function btn2Handler(){
+
+  if(btn2.textContent === Question.allQ[sh[Qcounter]].trueAns){
+    scour++;
+    Qcounter++;
+    console.log('scour='+scour+'couner='+Qcounter);
+    if(Qcounter<20){
+      // console.log(sh[Qcounter]);
+      Question.allQ[sh[Qcounter]].rendar(Qcounter);
+    }
+    else{
+      finshMsg();
+    }
+
+
+  }
+  else if(btn2.textContent === Question.allQ[sh[Qcounter]].falseAns){
+    Qcounter++;
+    // console.log('scour='+scour+'couner='+Qcounter);
+    if(Qcounter<20){
+      // console.log(sh[Qcounter]);
+      Question.allQ[sh[Qcounter]].rendar(Qcounter);
+    }
+    else{
+      finshMsg();
+    }
+
+
+
+  }
+  localStorage.setItem('score', JSON.stringify(scour));
+}
+
+
 Question.prototype.rendar = function(i){
   mainDev.innerHTML='';
   let qHeader=document.createElement('h1');
@@ -340,72 +390,16 @@ Question.prototype.rendar = function(i){
 
 
 };
+
+
+
 shuffle(sh);
 let Qcounter=0;
 Question.allQ[sh[Qcounter]].rendar(Qcounter);
 
 let scour=0;
-function btn1Handler(){
-  if(btn1.textContent === Question.allQ[sh[Qcounter]].trueAns){
-    scour++;
-    Qcounter++;
-    console.log('scour='+scour+'couner='+Qcounter);
-    if(Qcounter<20){
-      console.log(sh[Qcounter]);
-      Question.allQ[sh[Qcounter]].rendar(Qcounter);
-    }
-    else{
-      finshMsg();
-    }
 
 
-  }
-  else if(btn1.textContent === Question.allQ[sh[Qcounter]].falseAns){
-    Qcounter++;
-    console.log('scour='+scour+'couner='+Qcounter);
-    if(Qcounter<20){
-      console.log(sh[Qcounter]);
-      Question.allQ[sh[Qcounter]].rendar(Qcounter);
-    }
-    else{
-      finshMsg();
-    }
-
-
-
-  }
-}
-function btn2Handler(){
-
-  if(btn2.textContent === Question.allQ[sh[Qcounter]].trueAns){
-    scour++;
-    Qcounter++;
-    console.log('scour='+scour+'couner='+Qcounter);
-    if(Qcounter<20){
-      console.log(sh[Qcounter]);
-      Question.allQ[sh[Qcounter]].rendar(Qcounter);
-    }
-    else{
-      finshMsg();
-    }
-
-
-  }
-  else if(btn2.textContent === Question.allQ[sh[Qcounter]].falseAns){
-    Qcounter++;
-    console.log('scour='+scour+'couner='+Qcounter);
-    if(Qcounter<20){
-      console.log(sh[Qcounter]);
-      Question.allQ[sh[Qcounter]].rendar(Qcounter);
-    }
-    else{
-      finshMsg();
-    }
-
-
-
-  }
-}
 
 function finshMsg(){
   let chech=document.createElement('img');
@@ -419,6 +413,7 @@ function finshMsg(){
   let header2=document.createElement('h2');
   mainDev.appendChild(header2);
   header2.textContent='Your Score is '+scour;
+  audio1.play();
 }
 function shuffle(array) {
   let currentIndex = array.length, temporaryValue, randomIndex;
@@ -440,3 +435,17 @@ function shuffle(array) {
 }
 
 
+function getData() {
+  let x = JSON.parse(localStorage.getItem('score'));
+  if (x===null) {
+    let h1Ele = document.createElement('h1');
+    divScour.appendChild(h1Ele);
+    h1Ele.textContent='Your previous score '+0;
+  }
+  else {
+    let h1Ele = document.createElement('h1');
+    divScour.appendChild(h1Ele);
+    h1Ele.textContent='Your previous score '+x;
+  }
+}
+getData();

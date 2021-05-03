@@ -8,14 +8,14 @@ let row21=document.getElementById('row21');
 let row22=document.getElementById('row22');
 let row23=document.getElementById('row23');
 
-let animals=['bear.png','cat.png','cow.png','dog.png','elephant.png','fox.png','frog.png','giraffe.png','lion.png','monkey.png','panda.jpg','polar-bear.png','tiger.png'];
-let nameSound=['bear.mp3','cat.mp3','cow.mp3','dog.mp3','elephant.mp3','fox.mp3','frog.mp3','giraffe.mp3','lion.mp3','monkey.mp3','panda.mp3','polar-bear.mp3','tiger.mp3'];
-let fruits=['apple.png','banana.png','blueberry.png','figs.png','grape.png','kiwi.png','orange.png','peach.png','pineapple.png','strowberry.png'];
-let fruitsSound=['apple.mp3','banana.mp3','blueberry.mp3','fig.mp3','grape.mp3','kiwi.mp3','orange.mp3','peach.mp3','pineapple.mp3','strawberry.mp3'];
+let animals=['bear.png','cat.png','cow.png','dog.png','elephant.png','fox.png','frog.png','giraffe.png','lion.png','monkey.png','panda.png','polar-bear.png','tiger.png','snake.png','duck.png'];
+let nameSound=['bear.mp3','cat.mp3','cow.mp3','dog.mp3','elephant.mp3','fox.mp3','frog.mp3','giraffe.mp3','lion.mp3','monkey.mp3','panda.mp3','polar-bear.mp3','tiger.mp3','snake.mp3','duck.mp3'];
+let fruits=['apple.png','banana.png','blueberry.png','figs.png','grape.png','kiwi.png','orange.png','peach.png','pineapple.png','strowberry.png','tomato.png','potato.png','cucumber.png'];
+let fruitsSound=['apple.mp3','banana.mp3','blueberry.mp3','fig.mp3','grape.mp3','kiwi.mp3','orange.mp3','peach.mp3','pineapple.mp3','strawberry.mp3','tomato.mp3','potato.mp3','cucumber.mp3'];
 
 
-let d=[0,1,2,3,4,5,6,7,8,9,10,11,12];
-let f=[0,1,2,3,4,5,6,7,8,9];
+let d=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14];
+let f=[0,1,2,3,4,5,6,7,8,9,10,11,12];
 
 function Animals(name,sound){
   this.name=name.split('.')[0];
@@ -158,7 +158,7 @@ for (let i=0;i<Fruits.all.length;i++){
 }
 
 shuffle(d);
-for (let i=0;i<Animals.all.length;i++){
+for (let i=0;i<9;i++){
 
   Animals.all[d[i]].rendur1(i);
 }

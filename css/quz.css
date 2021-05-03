@@ -38,27 +38,17 @@ button{
       justify-content: center;
       align-items: center;
       text-align: center;
+      margin: auto;
       font-size: 25px;
       color: #80C644;
       width: 100%;
       
-  }
+  } 
   .scor-div h1{
+    align-items: center;
     text-align: center;
+    margin-top: 100px;
     font-size: 25px;
     color: #80C644;
 }
 
-/* .btn{
-    margin-top: 10px;
-    width: 100px;
-    height: 60px;
-    background-color: #FFD823;
-}
-
-.btn-grid{
-    margin-left: 60px;
-} */
-/* .retake-btn{
-    visibility: hidden;
-} */

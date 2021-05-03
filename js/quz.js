@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 /* let questionCon = document.getElementById("question-container");
 // let answerButtons = document.getElementById('answer-buttons');
 let retakeBtn = document.getElementById("retake-btn");
@@ -58,7 +58,7 @@ let imgQ = document.getElementById("img_Q");
   this.answer1 = answer1;
   this.answer2 = answer2;
   Question.quiz.push(this);
-} 
+}
 Question.quiz = [];
 let score = 0;
 let m = 0;
@@ -208,100 +208,100 @@ getData(); */
 
 //Rawan edit
 //=============
-console.log(Animals.all[0]);
+// console.log(Animals.all[0]);
 
 let btn1=document.createElement('button');
 let btn2=document.createElement('button');
 let sh=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19];
 let mainDev=document.getElementById('qusCard');
 let imgs = [
-  "apples.png",
-  "ball.png",
-  "bear.png",
-  "bee.png",
-  "box.png",
-  "boys.png",
-  "cat.png",
-  "dog.png",
-  "donkey.png",
-  "door.png",
-  "elephant.png",
-  "fishes.png",
-  "flower.png",
-  "light.png",
-  "mirror.png",
-  "pens.png",
-  "plates.png",
-  "star.png",
-  "sun.png",
-  "window.png",
+  'apples.png',
+  'ball.png',
+  'bear.png',
+  'bee.png',
+  'box.png',
+  'boys.png',
+  'cat.png',
+  'dog.png',
+  'donkey.png',
+  'door.png',
+  'elephant.png',
+  'fishes.png',
+  'flower.png',
+  'light.png',
+  'mirror.png',
+  'pens.png',
+  'plates.png',
+  'star.png',
+  'sun.png',
+  'window.png',
 ];
 
 let questionArr = [
-  "How many apples in the picture ? ",
-  "How many balls do you see in the picture? ",
-  "The Bears  sounds is ....? ",
-  "The Bees sound is ....?",
-  "How many box do you see in the picture?",
-  "How many boys do you see in the picture?",
-  "The cat sound is ? ",
-  "The dog sound is ? ",
-  "The Donkeys sound is ..? ",
-  "What dose the word door starts with? ",
-  "The Elephants sound is ...?",
-  "How many fishes in the picture ?",
-  "What dose the word flower starts with?",
-  "What dose the word light starts with?",
-  "Mirror start with ?? ",
-  "How many pens do you see in the picture?",
-  "How many plates do you see in the picture? ",
-  "What dose the word start starts with?",
-  "Sun start with ?? ",
-  "What does the word window starts with? ",
+  'How many apples in the picture ? ',
+  'How many balls do you see in the picture? ',
+  'The Bears  sounds is ....? ',
+  'The Bees sound is ....?',
+  'How many box do you see in the picture?',
+  'How many boys do you see in the picture?',
+  'The cat sound is ? ',
+  'The dog sound is ? ',
+  'The Donkeys sound is ..? ',
+  'What dose the word door starts with? ',
+  'The Elephants sound is ...?',
+  'How many fishes in the picture ?',
+  'What dose the word flower starts with?',
+  'What dose the word light starts with?',
+  'Mirror start with ?? ',
+  'How many pens do you see in the picture?',
+  'How many plates do you see in the picture? ',
+  'What dose the word start starts with?',
+  'Sun start with ?? ',
+  'What does the word window starts with? ',
 ];
 let trueAns = [
-  "2 Apples ",
-  "6 Balls",
-  "Roar",
-  "Buzz",
-  "1 Box",
-  "6 Boys",
-  "Purr",
-  "Bark",
-  "Hee-Haw",
-  "The letter D",
-  "Trumpet",
-  "4 Fishes",
-  "The letter F",
-  "The letter L",
-  "The Letter M",
-  "3 Pens",
-  "9 Plates",
-  "The letter S",
-  "The letter S",
-  "The letter W",
+  '2 Apples ',
+  '6 Balls',
+  'Roar',
+  'Buzz',
+  '1 Box',
+  '6 Boys',
+  'Purr',
+  'Bark',
+  'Hee-Haw',
+  'The letter D',
+  'Trumpet',
+  '4 Fishes',
+  'The letter F',
+  'The letter L',
+  'The Letter M',
+  '3 Pens',
+  '9 Plates',
+  'The letter S',
+  'The letter S',
+  'The letter W',
 ];
 let falseAns = [
-  "5 Apples",
-  "2 Balls",
-  "Pipe",
-  "Quack",
-  "3 Boxs",
-  "8 Boys",
-  "bark",
-  "Growl",
-  "Wheek",
-  "The letter V",
-  "Squeak",
-  "8 Fishes",
-  "The letter J",
-  "The letter Z ",
-  "The Letter S",
-  "7 pens",
-  "6 Plates",
-  "The letter V",
-  "The letter W",
-  "The letter S",
+  '5 Apples',
+  '2 Balls',
+  'Pipe',
+  'Quack',
+  '3 Boxs',
+  '8 Boys',
+  'bark',
+  'Growl',
+  'Wheek',
+  'The letter V',
+  'Squeak',
+  '8 Fishes',
+  'The letter J',
+  'The letter Z ',
+  'The Letter S',
+  '7 pens',
+  '6 Plates',
+  'The letter V',
+  'The letter W',
+  'The letter S',
 ];
 function Question (index) {
   this.imgPath='./img/imgQiuz/'+imgs[index];
@@ -327,7 +327,7 @@ Question.prototype.rendar = function(i){
   qImg.src=this.imgPath;
   mainDev.appendChild(btn1);
   mainDev.appendChild(btn2);
-  if(i%3 ==0){
+  if(i%3 ===0){
     btn1.textContent=this.trueAns;
     btn2.textContent=this.falseAns;
   }else{
@@ -337,50 +337,19 @@ Question.prototype.rendar = function(i){
   }
   btn1.addEventListener('click',btn1Handler);
   btn2.addEventListener('click',btn2Handler);
-  
 
-}
+
+};
 shuffle(sh);
 let Qcounter=0;
 Question.allQ[sh[Qcounter]].rendar(Qcounter);
 
 let scour=0;
 function btn1Handler(){
-    if(btn1.textContent == Question.allQ[sh[Qcounter]].trueAns){
-      scour++;
-      Qcounter++;
-      console.log('scour='+scour+"couner="+Qcounter);
-      if(Qcounter<20){
-        console.log(sh[Qcounter]);
-        Question.allQ[sh[Qcounter]].rendar(Qcounter);
-      }
-      else{
-        finshMsg();
-      }
-      
-      
-    }
-    else if(btn1.textContent == Question.allQ[sh[Qcounter]].falseAns){
-      Qcounter++;
-      console.log('scour='+scour+"couner="+Qcounter);
-      if(Qcounter<20){
-        console.log(sh[Qcounter]);
-        Question.allQ[sh[Qcounter]].rendar(Qcounter);
-      }
-      else{
-        finshMsg();
-      }
-      
-     
-     
-    }
-}
-function btn2Handler(){
-  
-  if(btn2.textContent == Question.allQ[sh[Qcounter]].trueAns){
+  if(btn1.textContent === Question.allQ[sh[Qcounter]].trueAns){
     scour++;
     Qcounter++;
-    console.log('scour='+scour+"couner="+Qcounter);
+    console.log('scour='+scour+'couner='+Qcounter);
     if(Qcounter<20){
       console.log(sh[Qcounter]);
       Question.allQ[sh[Qcounter]].rendar(Qcounter);
@@ -388,12 +357,12 @@ function btn2Handler(){
     else{
       finshMsg();
     }
-    
-    
+
+
   }
-  else if(btn2.textContent == Question.allQ[sh[Qcounter]].falseAns){
+  else if(btn1.textContent === Question.allQ[sh[Qcounter]].falseAns){
     Qcounter++;
-    console.log('scour='+scour+"couner="+Qcounter);
+    console.log('scour='+scour+'couner='+Qcounter);
     if(Qcounter<20){
       console.log(sh[Qcounter]);
       Question.allQ[sh[Qcounter]].rendar(Qcounter);
@@ -401,9 +370,40 @@ function btn2Handler(){
     else{
       finshMsg();
     }
-    
-   
-   
+
+
+
+  }
+}
+function btn2Handler(){
+
+  if(btn2.textContent === Question.allQ[sh[Qcounter]].trueAns){
+    scour++;
+    Qcounter++;
+    console.log('scour='+scour+'couner='+Qcounter);
+    if(Qcounter<20){
+      console.log(sh[Qcounter]);
+      Question.allQ[sh[Qcounter]].rendar(Qcounter);
+    }
+    else{
+      finshMsg();
+    }
+
+
+  }
+  else if(btn2.textContent === Question.allQ[sh[Qcounter]].falseAns){
+    Qcounter++;
+    console.log('scour='+scour+'couner='+Qcounter);
+    if(Qcounter<20){
+      console.log(sh[Qcounter]);
+      Question.allQ[sh[Qcounter]].rendar(Qcounter);
+    }
+    else{
+      finshMsg();
+    }
+
+
+
   }
 }
 
@@ -412,7 +412,7 @@ function finshMsg(){
   mainDev.innerHTML='';
   mainDev.appendChild(chech);
   chech.src='./img/imgQiuz/right-icon.png';
-  chech.classList.add("fade");
+  chech.classList.add('fade');
   let header=document.createElement('h1');
   mainDev.appendChild(header);
   header.textContent='Well done !';

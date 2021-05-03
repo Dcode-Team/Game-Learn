@@ -317,6 +317,69 @@ for (let i=0;i<imgs.length;i++){
   new Question(i);
 }
 
+function btn1Handler(){
+  if(btn1.textContent === Question.allQ[sh[Qcounter]].trueAns){
+    scour++;
+    Qcounter++;
+    // console.log('scour='+scour+'couner='+Qcounter);
+    if(Qcounter<20){
+      // console.log(sh[Qcounter]);
+      Question.allQ[sh[Qcounter]].rendar(Qcounter);
+    }
+    else{
+      finshMsg();
+    }
+
+
+  }
+  else if(btn1.textContent === Question.allQ[sh[Qcounter]].falseAns){
+    Qcounter++;
+    // console.log('scour='+scour+'couner='+Qcounter);
+    if(Qcounter<20){
+      // console.log(sh[Qcounter]);
+      Question.allQ[sh[Qcounter]].rendar(Qcounter);
+    }
+    else{
+      finshMsg();
+    }
+
+
+
+  }
+}
+function btn2Handler(){
+
+  if(btn2.textContent === Question.allQ[sh[Qcounter]].trueAns){
+    scour++;
+    Qcounter++;
+    console.log('scour='+scour+'couner='+Qcounter);
+    if(Qcounter<20){
+      // console.log(sh[Qcounter]);
+      Question.allQ[sh[Qcounter]].rendar(Qcounter);
+    }
+    else{
+      finshMsg();
+    }
+
+
+  }
+  else if(btn2.textContent === Question.allQ[sh[Qcounter]].falseAns){
+    Qcounter++;
+    // console.log('scour='+scour+'couner='+Qcounter);
+    if(Qcounter<20){
+      // console.log(sh[Qcounter]);
+      Question.allQ[sh[Qcounter]].rendar(Qcounter);
+    }
+    else{
+      finshMsg();
+    }
+
+
+
+  }
+}
+
+
 Question.prototype.rendar = function(i){
   mainDev.innerHTML='';
   let qHeader=document.createElement('h1');
@@ -327,7 +390,7 @@ Question.prototype.rendar = function(i){
   qImg.src=this.imgPath;
   mainDev.appendChild(btn1);
   mainDev.appendChild(btn2);
-  if(i%3 ==0){
+  if(i%3 ===0){
     btn1.textContent=this.trueAns;
     btn2.textContent=this.falseAns;
   }else{
@@ -346,67 +409,6 @@ let Qcounter=0;
 Question.allQ[sh[Qcounter]].rendar(Qcounter);
 
 let scour=0;
-function btn1Handler(){
-  if(btn1.textContent == Question.allQ[sh[Qcounter]].trueAns){
-    scour++;
-    Qcounter++;
-    console.log('scour='+scour+'couner='+Qcounter);
-    if(Qcounter<20){
-      console.log(sh[Qcounter]);
-      Question.allQ[sh[Qcounter]].rendar(Qcounter);
-    }
-    else{
-      finshMsg();
-    }
-
-
-  }
-  else if(btn1.textContent == Question.allQ[sh[Qcounter]].falseAns){
-    Qcounter++;
-    console.log('scour='+scour+'couner='+Qcounter);
-    if(Qcounter<20){
-      console.log(sh[Qcounter]);
-      Question.allQ[sh[Qcounter]].rendar(Qcounter);
-    }
-    else{
-      finshMsg();
-    }
-
-
-
-  }
-}
-function btn2Handler(){
-
-  if(btn2.textContent == Question.allQ[sh[Qcounter]].trueAns){
-    scour++;
-    Qcounter++;
-    console.log('scour='+scour+'couner='+Qcounter);
-    if(Qcounter<20){
-      console.log(sh[Qcounter]);
-      Question.allQ[sh[Qcounter]].rendar(Qcounter);
-    }
-    else{
-      finshMsg();
-    }
-
-
-  }
-  else if(btn2.textContent == Question.allQ[sh[Qcounter]].falseAns){
-    Qcounter++;
-    console.log('scour='+scour+'couner='+Qcounter);
-    if(Qcounter<20){
-      console.log(sh[Qcounter]);
-      Question.allQ[sh[Qcounter]].rendar(Qcounter);
-    }
-    else{
-      finshMsg();
-    }
-
-
-
-  }
-}
 
 function finshMsg(){
   let chech=document.createElement('img');

@@ -292,6 +292,9 @@ body{
   border-radius: 1rem;
   text-align: center;
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .display .box:nth-child(even){
   background-color: var(--color2);
@@ -305,6 +308,7 @@ body{
 }
 .display .box i{
   color: #fff;
+  width: 40%;
   padding:10px 20px;
   border-radius: 50%;
   background-color: var(--color2); 

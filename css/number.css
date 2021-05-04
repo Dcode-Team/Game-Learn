@@ -1,0 +1,111 @@
+.number-slide{
+  background-image: url('./../img/pencil8.jpg');
+  background-position: bottom;
+
+}
+.row{
+  /*   width: 100%;
+    display: flex;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 30px;
+    align-items: center;
+    gap: 30px;
+}
+.row2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-bottom: 20px;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.row div,.row2 div{
+  width: 100%;
+}
+
+header .title{
+    font-size: 2rem;
+    text-align: center;
+    color: #80C644;
+    /* text-shadow: 2px 2px #ebd50d; */
+    letter-spacing: 0px;
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+    text-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;;
+}
+.title2{
+    font-size: 2rem;
+    text-align: center;
+    color: #80C644;
+    /* text-shadow: 2px 2px #ebd50d; */
+    letter-spacing: 0px;
+    margin: 0;
+    padding: 0;
+    text-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;;
+
+}
+.slide-container {
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+  }
+  .arrow {
+    width: 2rem;
+    margin: 0 1rem;
+  }
+  .title {
+    text-align: center;
+    color: #80C644;
+    /* text-shadow: 2px 2px #ebd50d; */
+    letter-spacing: 0px;
+    text-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+  
+  
+  .big-char {
+    font-size: 56px;
+    line-height: 2;
+    text-align: center;
+    color: red;
+    /* margin-top: -50px; */
+    text-transform: uppercase;
+}
+.slider-litt {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  section::-webkit-scrollbar {
+    height: 5px;
+    width: 2px;
+    border: 1px solid #80C644;
+    /* background-color: #FFD823; */
+  }
+  section::-webkit-scrollbar-track {
+    --webkit-box-shadow: inset 0 0 6px #80C644;
+  }
+  section::-webkit-scrollbar-thumb {
+    background-color: #80C644;
+    outline: 1px solid #eee;
+  }
+  .card-section img{
+      height: 130px ;
+      
+  }
+  .keyboard{
+    /* padding-bottom: 10em; */
+  }
+
+.header{
+  padding: 3rem 0;
+}

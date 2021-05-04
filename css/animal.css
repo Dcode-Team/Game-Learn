@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+*{
+    box-sizing: border-box;
+} 
+body{
+    font-family: 'Original Surfer', cursive;
+}
+.animal-slide{
+    background-image: url(./../img/pencil9.jpg);
+    background-position:top;
+  }
+.card-section{
+    position: relative;
+   padding-bottom: 50px;
+   
+}
+
+.row{
+  /*   width: 100%;
+    display: flex;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 30px;
+    gap: 30px;
+    align-items: center;
+
+    
+}
+.row div ,.row2 div{
+    padding: 20px;
+    background-color: var(--color3);
+    border:2px solid var(--main-color);
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.row div button{
+    background-color: var(--color2);
+    padding: 8px 16px;
+    color: var(--main-color);
+    font-size: larger;
+    border-radius: 1rem;
+    border:1px solid var(--main-color);
+    
+}
+.row div button:nth-child(2){
+    float: right;
+}
+.row div h4{
+    text-align: center;
+    font-weight: bolder;
+    color: var(--main-color);
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.col{
+    
+}
+.card-section img{
+    width:100%;
+    height: 250px;
+}
+ .card-section img:hover{
+     transform: scale(1.15);
+     transition: all .25s ease-in-out;
+     cursor: pointer;
+     
+ }
+ .card-section button:hover{
+    transform: scale(1.15);
+    transition: all .25s ease-in-out;
+    cursor: pointer;
+ }
+     
+ .title2{
+    font-size: 2rem; 
+    text-align: center;
+    color: #80C644;
+    text-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;;
+    letter-spacing: 0px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;}
+
+/* .container h1{
+        font-size: 4rem;
+        margin-bottom: -2rem;
+    }        
+ */
+.container p{
+    font-size: 2rem;
+}
+.header{
+    padding: 3rem 0;
+  }
+  

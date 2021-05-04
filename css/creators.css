@@ -8,10 +8,9 @@ font-size: 25px;
 padding-bottom: 5em;
 
 }
-main .row{
+.row{
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
 }
 
@@ -85,6 +84,7 @@ main .row{
   flex-direction: column;
   width: 100%;
   margin: auto;
+  height: 100%;
 }
 .container2 {
   border-radius: 50%;
@@ -121,14 +121,15 @@ main .row{
 .circle {
   border-radius: 50%;
   cursor: pointer;
-  height: 300px;
+  height: 50vh;
   /* left: 10%; */
   pointer-events: none;
   /* position: absolute; */
   /* top: 210px; */
-  width: 300px;
+  width: 100%;
   margin: auto;
-  
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+ 
 }
 img{
   object-fit: cover;
@@ -171,6 +172,8 @@ container2:hover .img {
   font-weight: 600;
   margin-top: 16px;
   text-align: center;
+  height: 3rem;
+  text-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 .title {
   color: #6e6e6e;

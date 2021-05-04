@@ -154,15 +154,14 @@ body{
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image: url(./../img/background3.jpg);
+    background-image: url(./../img/pencil2.jpg);
    background-repeat: no-repeat;
-   background-attachment: fixed;
    -moz-background-size: cover;
    -webkit-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
    padding-top: 100px;
-
+  background-position: center;
   }
  
   .slideshow-container .svg2{

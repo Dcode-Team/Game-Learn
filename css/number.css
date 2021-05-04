@@ -71,7 +71,7 @@ header .title{
     height: 5px;
     width: 2px;
     border: 1px solid #80C644;
-    background-color: #FFD823;
+    /* background-color: #FFD823; */
   }
   section::-webkit-scrollbar-track {
     --webkit-box-shadow: inset 0 0 6px #80C644;
@@ -88,3 +88,15 @@ header .title{
       height: 100px ;
       width: 100px;
   }
+  .keyboard{
+    padding-bottom: 10em;
+  }
+
+  .container h1{
+    font-size: 4rem;
+    margin-bottom: -2rem;
+}        
+
+.container p{
+font-size: 2rem;
+}

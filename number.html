@@ -34,14 +34,52 @@
     <!-- end navbar -->
     <!-- end navbar -->
     <header>
+        <!-- Slideshow container -->
+    <div class="slideshow-container number-slide">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade ">
+            <div class="inner-img">
+                <img src="./img/kids/numbers/6.png" alt="" class="slideLeft2" >
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="inner-img">
+                
+                <img src="./img/e.png" alt="" class="slideLeft2">
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="inner-img">
+                <img src="./img/number3.png" alt="" class="slideLeft2">
+            </div>
+        </div>
+
        
+        <svg class="svg2" id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 120"
+            version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                    <stop stop-color="#FFD823" offset="0%"></stop>
+                    <stop stop-color="#ffd72350" offset="100%"></stop>
+                </linearGradient>
+            </defs>
+            <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
+                d="M0,24L26.7,28C53.3,32,107,40,160,40C213.3,40,267,32,320,42C373.3,52,427,80,480,78C533.3,76,587,44,640,32C693.3,20,747,28,800,40C853.3,52,907,68,960,62C1013.3,56,1067,28,1120,22C1173.3,16,1227,32,1280,42C1333.3,52,1387,56,1440,60C1493.3,64,1547,68,1600,76C1653.3,84,1707,96,1760,96C1813.3,96,1867,84,1920,70C1973.3,56,2027,40,2080,40C2133.3,40,2187,56,2240,64C2293.3,72,2347,72,2400,64C2453.3,56,2507,40,2560,34C2613.3,28,2667,32,2720,36C2773.3,40,2827,44,2880,52C2933.3,60,2987,72,3040,78C3093.3,84,3147,84,3200,80C3253.3,76,3307,68,3360,64C3413.3,60,3467,60,3520,54C3573.3,48,3627,36,3680,34C3733.3,32,3787,40,3813,44L3840,48L3840,120L3813.3,120C3786.7,120,3733,120,3680,120C3626.7,120,3573,120,3520,120C3466.7,120,3413,120,3360,120C3306.7,120,3253,120,3200,120C3146.7,120,3093,120,3040,120C2986.7,120,2933,120,2880,120C2826.7,120,2773,120,2720,120C2666.7,120,2613,120,2560,120C2506.7,120,2453,120,2400,120C2346.7,120,2293,120,2240,120C2186.7,120,2133,120,2080,120C2026.7,120,1973,120,1920,120C1866.7,120,1813,120,1760,120C1706.7,120,1653,120,1600,120C1546.7,120,1493,120,1440,120C1386.7,120,1333,120,1280,120C1226.7,120,1173,120,1120,120C1066.7,120,1013,120,960,120C906.7,120,853,120,800,120C746.7,120,693,120,640,120C586.7,120,533,120,480,120C426.7,120,373,120,320,120C266.7,120,213,120,160,120C106.7,120,53,120,27,120L0,120Z">
+            </path>
+        </svg>
+    </div>
+
+
     </header>
     <main>
 
         <section class="card-section">
             <div class="container">
-                <h1 class="title2"> Letters </h1>
-                <p class="title2">Please press on any Image to get sounds</p> 
+               <header class="header">
+                <h1 class="title2"> Letters <br>
+                    Please press on any Image to get sounds</h1> 
+               </header>
                 <section id="card-section">
                     <div class="row" id='row1'></div>
                     <div class="row" id='row2'></div>
@@ -49,32 +87,17 @@
                     <div class="row" id='row4'></div>
                     <div class="row" id='row5'></div>
                     <div class="row" id='row6'></div>
+                    <div class="row" id='row7'></div>
                 </section>
             </div>
         </section>
-        <section class="card-section">
-            <hr class="hr-section">
-
-            
-            <div class="container">
-                <h1 class="title2">Numbers </h1>
-            <p class="title2">Please press on any Image to get sounds</p> 
-                <section id="card-section1">
-                    <div class="row" id='row21'></div>
-                    <div class="row" id='row22'></div>
-                    <div class="row" id='row23'></div>
-                    <div class="row" id='row24'></div>
-                    <div class="row" id='row25'></div>
-                </section>
-            </div>
-        </section>
-        <!-- ============================= -->
         <hr class="hr-section">
-
-        <section class="keyboard">
-
+        <section class="keyboard about-us">
             <div class="container">
-                <h1 class="title">Please press on any Image to get sounds</h1>
+                <header class="header">
+                    <h1 class="title2">Please press on any Image to get sounds</h1>
+                </header>
+                
                 <div class="slide-container">
                     <img id="slide-left" class="arrow" src="./img/left-arrow.png" alt="leftRow">
                     <section id="slider" class="container slider-litt">
@@ -85,26 +108,34 @@
                   <audio preload="none" id="audio">
                     <source id="mp3Source" src="sounds/mp3/like-glass.mp3" type="audio/mp3">
                     Oops! Sorry you're using an old browser, try using a modern browser like Google Chrome, Firefox or even Safari.
-                  </audio>
-                  
+                  </audio>  
             </div>
-
-            
         </section>
         <hr class="hr-section">
-
+        <section class="card-section ">
+            <div class="container">
+               <header class="header">
+                <h1 class="title2">Numbers <br>
+                    Please press on any Image to get sounds</h1> 
+               </header>
+                <section id="card-section1">
+                    <div class="row2" id='row21'></div>
+                    <div class="row2" id='row22'></div>
+                    
+                </section>
+            </div>
+        </section>
+        <!-- ============================= -->
+        <hr class="hr-section">
         <section class="keyboard">
             <div class="container">
-               
                 <div class="char-cont">
                     <h1 class="title">keyboard </h1>
                     <!-- <button id="mute-button" type="button" name="button">Mute Sounds</button> -->
                     <p class="big-char" id="big-char">press any button on the keyboard</p>
                 </div>
-        
             </div>
         </section>
-       
     </main>
     <footer>
         <svg class="svg-footer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">

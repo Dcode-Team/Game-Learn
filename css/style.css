@@ -148,6 +148,8 @@ body{
 }
 
 /* end navbar */
+
+
 /* start slider */
 /* Slideshow container */
 .slideshow-container {
@@ -184,6 +186,7 @@ body{
   }
   .inner-img img{
     height: 70%;
+    object-fit: cover;
   }
   
   /* Caption text */
@@ -257,7 +260,7 @@ body{
   margin: 0;
   padding: 0;
   line-height: 4;
-  text-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;;
+  text-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 .svg-services{
   position: relative;
@@ -291,6 +294,10 @@ body{
   border-radius: 1rem;
   text-align: center;
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .display .box:nth-child(even){
   background-color: var(--color2);
@@ -304,17 +311,17 @@ body{
 }
 .display .box i{
   color: #fff;
+  width: 60%;
   padding:10px 20px;
   border-radius: 50%;
   background-color: var(--color2); 
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 .display .box a{
+  padding: 8px 16px;
   color: #fff;
   text-decoration: none;
   background-color: #80C644;
-  padding: 8px 16px;
-  line-height: 5;
   border-radius: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
@@ -327,6 +334,7 @@ body{
   color:var(--color2)
 }
 .hr-section{
+  margin: 0;
   height: 10px;
   border:1px solid transparent; 
   background: linear-gradient(90deg, rgba(128,198,68,1) 0%, rgba(255,216,35,1) 45%, rgba(128,198,68,1) 100%);
@@ -357,7 +365,7 @@ body{
 }
 .about-us article h1{
   color: red;
-  font-size: 20px;
+  font-size: 1.5rem;
   padding-bottom: 20px;
 }
 .about-us article p{

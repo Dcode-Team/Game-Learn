@@ -76,3 +76,13 @@
     width:200px;
     height: 200px;
 }
+ .card-section img:hover{
+     transform: scale(1.15);
+     transition: all .25s ease-in-out;
+     
+ }
+ .card-section button:hover{
+    transform: scale(1.15);
+    transition: all .25s ease-in-out;
+ }
+     

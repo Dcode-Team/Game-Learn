@@ -79,7 +79,7 @@ body{
 }
 /* end slide left animation */
 .container{
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
 }
 /* navbar */
@@ -258,6 +258,7 @@ body{
   margin: 0;
   padding: 0;
   line-height: 4;
+  text-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;;
 }
 .svg-services{
   position: relative;
@@ -283,7 +284,7 @@ body{
   align-items: center;
 }
 .display .box{
-  width: 30%;
+  width: 32%;
   height: 40vh;
   background-color: var(--color3);
   transition: all .5s ease-in-out;
@@ -335,6 +336,44 @@ body{
 }
 
 /* end our servies */
+/* start about us section */
+.about-us{
+  position: relative;
+  padding-bottom: 90px;
+  height: 100%;
+  width: 100%;
+  background-color: var(--background);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+.about-us .display{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.about-us article{
+  padding-left: 40px;
+ 
+}
+.about-us article h1{
+  color: red;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.about-us article p{
+  padding-bottom: 10px;
+}
+.about-us .display i:first-child{
+  font-size: 15rem !important;
+  color: #fff;
+  padding: 10px 16px;
+  background-color: var(--color2);
+  border-radius: 2rem;
+  border: 1px solid var(--color3);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+/* end about us section */
 /* strat footer  */
 footer{
   background-color:var(--color3);
@@ -343,7 +382,7 @@ footer{
   height: 100%;
   margin: 0;
   margin-top: 150px;
-  color: var(--color2);
+  color: #2b2a2a;
   padding-top: 60px;
   font-size: 20px;
   padding-bottom: 20px;

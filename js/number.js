@@ -7,6 +7,7 @@ let row3=document.getElementById('row3');
 let row4=document.getElementById('row4');
 let row5=document.getElementById('row5');
 let row6=document.getElementById('row6');
+let row7=document.getElementById('row7');
 let row21=document.getElementById('row21');
 let row22=document.getElementById('row22');
 
@@ -19,7 +20,7 @@ let numberArray = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 let numberAudioArray = ['0sound','1sound','2sound','3sound','4sound','5sound','6sound','7sound','8sound','9sound'];
 
 let delta2 = [0,1,2,3,4,5,6,7,8,9];
-let delta = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26];
+let delta = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9,10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25];
 
 
 function Numbers(name2, sound){
@@ -89,34 +90,38 @@ Letters.prototype.renderA = function (index) {
   let columeElement = document.createElement('div');
   let pictElement = document.createElement('img');
 
-
   if (index < 4) {
     row1.appendChild(columeElement);
     pictElement.src = this.picturePath;
     columeElement.appendChild(pictElement);
 
-  }else if(index >4 && index<=8){
+  }else if(index >=4 && index<8){
     row2.appendChild(columeElement);
     pictElement.src=this.picturePath;
     columeElement.appendChild(pictElement);
 
-  }else if(index > 8 && index <= 12){
+  }else if(index >= 8 && index < 12){
     row3.appendChild(columeElement);
     pictElement.src=this.picturePath;
     columeElement.appendChild(pictElement);
 
-  }else if(index > 12 && index <= 16){
+  }else if(index >= 12 && index < 16){
     row4.appendChild(columeElement);
     pictElement.src=this.picturePath;
     columeElement.appendChild(pictElement);
 
-  }else if(index > 16 && index <= 20){
+  }else if(index >= 16 && index < 20){
     row5.appendChild(columeElement);
     pictElement.src=this.picturePath;
     columeElement.appendChild(pictElement);
 
-  }else{
+  }else if(index >=20 && index <24){
     row6.appendChild(columeElement);
+    pictElement.src=this.picturePath;
+    columeElement.appendChild(pictElement);
+  }
+  else {
+    row7.appendChild(columeElement);
     pictElement.src=this.picturePath;
     columeElement.appendChild(pictElement);
   }
@@ -135,13 +140,32 @@ Letters.prototype.renderA = function (index) {
 
 };
 
-
-for (let i = 0; i < Letters.all.length-1; i++) {
+shuffle(delta);
+//shuffle(delta2);
+for (let i = 0; i < Letters.all.length; i++) {
   // console.log(i,delta[i],Letters.all[delta[i]])
   Letters.all[delta[i]].renderA(i);
 
 }
 
+function shuffle(array) {
+  let currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
 
 
 /* Ali  */

@@ -60,21 +60,27 @@
     margin: 0 15px;
     border-radius: 1rem;
     border:1px solid var(--main-color);
+    
+    font-size: 30px;
+    font-weight: 800;
+    font-family: cursive;
+
 }
 .row div h4{
     text-align: center;
     font-weight: bolder;
     color: var(--main-color);
-    padding: 10px 0;
+    padding: 20px 0;
     text-transform: uppercase;
+    font-size: 25px;
 }
 
 .col{
     
 }
 .card-section img{
-    width:200px;
-    height: 200px;
+    width:300px;
+    height: 300px;
 }
  .card-section img:hover{
      transform: scale(1.15);

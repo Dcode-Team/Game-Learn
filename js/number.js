@@ -220,15 +220,15 @@ document.onkeypress = function(event){
   }
 };
 
-document.getElementById('mute-button').onclick = function() {
-  if (audioPlayer.muted === false) {
-    audioPlayer.muted = true;
-    document.getElementById('mute-button').innerHTML = 'Unmute Sounds';
-  } else {
-    audioPlayer.muted = false;
-    document.getElementById('mute-button').innerHTML = 'Mute Sounds';
-  }
-};
+// document.getElementById('mute-button').onclick = function() {
+//   if (audioPlayer.muted === false) {
+//     audioPlayer.muted = true;
+//     document.getElementById('mute-button').innerHTML = 'Unmute Sounds';
+//   } else {
+//     audioPlayer.muted = false;
+//     document.getElementById('mute-button').innerHTML = 'Mute Sounds';
+//   }
+// };
 let imgArray=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','1','2','3','4','5','6','7','8','9'];
 let section=document.getElementById('slider');
 for(let a=0;a<imgArray.length;a++){

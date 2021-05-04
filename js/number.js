@@ -158,15 +158,9 @@ function setGenericSound() {
   mp3Source.src = 'sounds/LettersNumbers/glass.mp3';
 }
 
-
-let kidsEnergy=document.getElementById('kidsEnergy');
 function runAudioPlayer() {
-  kidsEnergy=document.getElementById('kidsEnergy');
-  kidsEnergy.pause();
   audioPlayer.load();
   audioPlayer.play();
-  kidsEnergy.play();
-  kidsEnergy.volume=0.09;
   //kidsEnergy.onvolumechange=function(){alert('The volume has been changed automaticly');};
 }
 document.onkeypress = function(event){
@@ -227,13 +221,11 @@ document.onkeypress = function(event){
 };
 
 document.getElementById('mute-button').onclick = function() {
-  if (audioPlayer.muted === false||kidsEnergy.muted===false) {
+  if (audioPlayer.muted === false) {
     audioPlayer.muted = true;
-    kidsEnergy.muted=true;
     document.getElementById('mute-button').innerHTML = 'Unmute Sounds';
   } else {
     audioPlayer.muted = false;
-    kidsEnergy.muted=false;
     document.getElementById('mute-button').innerHTML = 'Mute Sounds';
   }
 };

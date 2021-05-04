@@ -79,10 +79,32 @@
  .card-section img:hover{
      transform: scale(1.15);
      transition: all .25s ease-in-out;
+     cursor: pointer;
      
  }
  .card-section button:hover{
     transform: scale(1.15);
     transition: all .25s ease-in-out;
+    cursor: pointer;
  }
      
+ .title2{
+    /* font-size: 2rem; */
+    text-align: center;
+    color: #80C644;
+    /* text-shadow: 2px 2px #ebd50d; */
+    letter-spacing: 0px;
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+    padding-bottom: 30px;}
+
+.container h1{
+        font-size: 4rem;
+        margin-bottom: -2rem;
+    }        
+
+.container p{
+    font-size: 2rem;
+}

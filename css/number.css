@@ -7,7 +7,7 @@ header .title{
     font-size: 2rem;
     text-align: center;
     color: #80C644;
-    text-shadow: 2px 2px #ebd50d;
+    /* text-shadow: 2px 2px #ebd50d; */
     letter-spacing: 0px;
     font-family: cursive;
     margin: 0;
@@ -18,7 +18,7 @@ header .title{
     font-size: 2rem;
     text-align: center;
     color: #80C644;
-    text-shadow: 2px 2px #ebd50d;
+    /* text-shadow: 2px 2px #ebd50d; */
     letter-spacing: 0px;
     font-family: cursive;
     margin: 0;
@@ -43,10 +43,12 @@ header .title{
     line-height: 4;
     text-align: center;
     color: #80C644;
-    text-shadow: 2px 2px #ebd50d;
+    /* text-shadow: 2px 2px #ebd50d; */
     letter-spacing: 0px;
     font-family: cursive;
   }
+
+  
   .big-char {
     font-size: 56px;
     line-height: 2;

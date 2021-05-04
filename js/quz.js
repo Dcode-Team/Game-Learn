@@ -209,6 +209,7 @@ let scour=0;
 
 
 function finshMsg(){
+  getData();
   let chech=document.createElement('img');
   mainDev.innerHTML='';
   mainDev.appendChild(chech);
@@ -250,6 +251,7 @@ function getData() {
     h1Ele.textContent='Your previous score '+0;
   }
   else {
+    divScour.innerHTML='';
     let h1Ele = document.createElement('h1');
     divScour.appendChild(h1Ele);
     h1Ele.textContent='Your previous score '+x+' out of 12';

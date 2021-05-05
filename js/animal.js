@@ -10,7 +10,7 @@ let row23=document.getElementById('row23');
 
 let animals=['bear.png','cat.png','cow.png','dog.png','elephant.png','fox.png','frog.png','giraffe.png','lion.png','monkey.png','panda.png','polar-bear.png','tiger.png','snake.png','duck.png'];
 let nameSound=['bear.mp3','cat.mp3','cow.mp3','dog.mp3','elephant.mp3','fox.mp3','frog.mp3','giraffe.mp3','lion.mp3','monkey.mp3','panda.mp3','polar-bear.mp3','tiger.mp3','snake.mp3','duck.mp3'];
-let fruits=['apple.png','banana.png','blueberry.png','figs.png','grape.png','kiwi.png','orange.png','peach.png','pineapple.png','strowberry.png','tomato.png','potato.png','cucumber.png'];
+let fruits=['apple.png','banana.png','blueberry.png','figs.png','grape.png','kiwi.png','orange.png','peach.png','pineapple.png','Strawberries.png','tomato.png','potato.png','cucumber.png'];
 let fruitsSound=['apple.mp3','banana.mp3','blueberry.mp3','fig.mp3','grape.mp3','kiwi.mp3','orange.mp3','peach.mp3','pineapple.mp3','strawberry.mp3','tomato.mp3','potato.mp3','cucumber.mp3'];
 
 
